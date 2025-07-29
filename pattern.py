@@ -12,18 +12,47 @@ def pattern1(n):
         for j in range(n):
             print("*",end="")
         print()
+# enter n:5
+# *****
+# *****
+# *****
+# *****
+# *****
 def pattern2(n):
     for i in range(n):
         for j in range (i+1):
             print("*",end='')
         print()
+# enter n:5
+# *     
+# **     
+# ***     
+# ****
+# *****
 def pattern3(n):
     for i in range(n):
         for j in range(i+1):
             print(j+1,end="")
         print()
+# enter n:5
+# 1
+# 12
+# 123
+# 1234
+# 12345
+def pattern4(n):
+    for i in range(1,n+1):
+        for j in range(i):
+            print(i,end="")
+        print()
+# enter n:5
+# 1
+# 22
+# 333
+# 4444
+# 55555
 n=int(input("enter n:"))
-pattern3(n)
+pattern4(n)
 
 
 
