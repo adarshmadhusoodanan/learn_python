@@ -6,3 +6,11 @@
 # 3. print them " * " inside the inner for loop
 # 4. observe symmetry { optional }
 
+
+def pattern1(n):
+    for i in range(n):
+        for j in range(n):
+            print("*",end="")
+        print()
+n=int(input("enter n:"))
+pattern1(n)
