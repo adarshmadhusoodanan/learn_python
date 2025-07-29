@@ -51,8 +51,19 @@ def pattern4(n):
 # 333
 # 4444
 # 55555
+def pattern5(n):
+    for i in range(n,0,-1):
+        for j in range(i):
+            print("*",end="")
+        print()
+# enter n:5
+# *****
+# ****
+# ***
+# **
+# *
 n=int(input("enter n:"))
-pattern4(n)
+pattern5(n)
 
 
 
