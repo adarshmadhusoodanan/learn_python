@@ -12,5 +12,14 @@ def pattern1(n):
         for j in range(n):
             print("*",end="")
         print()
+def pattern2(n):
+    for i in range(n):
+        for j in range (i+1):
+            print("*",end='')
+        print()
 n=int(input("enter n:"))
-pattern1(n)
+pattern2(n)
+
+
+
+
