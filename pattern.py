@@ -142,8 +142,38 @@ def pattern11(n):
 # 010
 # 1010
 # 01010
+def pattern12(n):
+    for i in range(n):
+        for j in range(i+1):
+            print("*",end="")
+        print()
+    for i in range(n):  
+        for j in range(n-i-1):
+            print("*",end="")
+        print()
+
+        #or
+        
+def pattern12b(n):
+    for i in range(2*n):
+        s=i
+        if i>n:
+            s=2*n-i
+        for j in range(s):
+            print("*",end="")
+        print()
+# enter n:5
+# *
+# **
+# ***
+# ****
+# *****
+# ****
+# ***
+# **
+# *
 n=int(input("enter n:"))
-pattern11(n)
+pattern12b(n)
 
 
 
