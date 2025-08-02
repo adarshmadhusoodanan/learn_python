@@ -1,0 +1,18 @@
+class whatsapp{
+    Void chat()
+    System.out.println("Message");
+}
+class whatsapp1 extends whatsapp{
+    Void status()
+    System.out.println("Status")
+}
+class whatsapp 2 extends whatsapp1{
+    void call()
+    System.out.println("call")
+}
+Public class mainclass1{
+    Public static void main(string[args]){
+        whatsapp w1=new whatsapp();
+        w1.chat()
+    }
+}
