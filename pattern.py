@@ -112,16 +112,21 @@ def pattern9(n):
 #    *****
 #   *******
 #  *********
-def pattern10():
+def pattern10(n):
     for i in range(n):
         for j in range(i):
             print(" ",end="")
-        for j in range(2*n-1):
+        for j in range(2*(n-i)-1):
             print("*",end="")
         print()
-
+# enter n:5
+# *********
+#  *******
+#   *****
+#    ***
+#     *
 n=int(input("enter n:"))
-pattern8(n)
+pattern10(n)
 
 
 
