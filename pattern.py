@@ -125,8 +125,25 @@ def pattern10(n):
 #   *****
 #    ***
 #     *
+def pattern11(n):
+    for i in range(n):
+        star=1
+        if i%2==0:
+            star=0
+        else:
+            star=1
+        for j in range(i+1):
+            print(star,end="")
+            star=1-star
+        print()
+# enter n:5
+# 0
+# 10
+# 010
+# 1010
+# 01010
 n=int(input("enter n:"))
-pattern10(n)
+pattern11(n)
 
 
 
