@@ -224,5 +224,16 @@ def pattern16(n):
 # E D C
 # E D
 # E
+def pattern17(n):
+    for i in range(n):
+        for j in range(i+1):
+            print(chr(65+i),end=" ")
+        print()
+# enter n:5
+# A 
+# B B
+# C C C
+# D D D D
+# E E E E E
 n=int(input("enter n:"))
-pattern16(n)
+pattern17(n)
