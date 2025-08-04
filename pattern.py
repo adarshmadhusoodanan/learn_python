@@ -172,8 +172,25 @@ def pattern12b(n):
 # ***
 # **
 # *
+
+def pattern13(n):
+    space=2*(n-1)
+    for i in range(n):
+        for j in range(i+1):
+            print(j+1,end="")
+        for j in range(space-(i*2)):
+            print(" ",end="")
+        for j in range(i,-1,-1):
+            print(j+1,end="")
+        print()
+# enter n:5
+# 1        1
+# 12      21
+# 123    321
+# 1234  4321
+# 1234554321
 n=int(input("enter n:"))
-pattern12b(n)
+pattern13(n)
 
 
 
