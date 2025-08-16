@@ -1,4 +1,4 @@
-# solving 22 patterns problems
+# solving  patterns problems
 
 # tips
 # 1. for the outer loop, count the no. of lines
@@ -235,5 +235,38 @@ def pattern17(n):
 # C C C
 # D D D D
 # E E E E E
+def pattern18(n):
+    for i in range(n):
+        for j in range(n,i,-1):
+            print(" ",end="")
+        for j in range(i+1):
+            print(chr(65+j),end=" ")
+        print()
+# enter n:5
+#      A 
+#     A B
+#    A B C
+#   A B C D
+#  A B C D E
+def pattern19(n):
+    for i in range(n):
+        for j in range(n,i,-1):
+            print(" ",end="")
+        for j in range(i+1):
+            print(chr(65+j),end="")
+        print()
+# enter n:5
+#      A
+#     AB
+#    ABC
+#   ABCD
+#  ABCDE
+def pattern20(n):
+    for i in range(n):
+        for j in range(n,i,-1):
+            print(" ",end="")
+        for j in range(2):
+            print(chr(65+j),end="")
+        print()
 n=int(input("enter n:"))
-pattern17(n)
+pattern20(n)
