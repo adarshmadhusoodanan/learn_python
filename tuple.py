@@ -46,12 +46,12 @@
 # print(t[:3])      op: (1, 2, 3)
 
 # tuple built-in functions
-            # tuple.count() -> int
+            # tuple.count(value) -> int
 
 # t = (1,2,3,1,4,1,5)
 # print(t.count(1))     op:3 
 
-            # tuple.index() -> int
+            # tuple.index(value,start:0,end:size of tuple) -> int
 
 # t = (1,2,3,1,4,1,5)
 # print(t.index(1))     op:0
