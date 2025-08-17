@@ -8,7 +8,7 @@
 # t = (10,)             (10,) <class 'tuple'>                define
 # t=()                  () <class 'tuple'>                   empty tuple
 # t=(1,3,5,(2,4,6))     (1, 3, 5, (2, 4, 6)) <class 'tuple'> nested tuple
-
+# print(len(t))         op: 4
 
 
             # property of tuples
