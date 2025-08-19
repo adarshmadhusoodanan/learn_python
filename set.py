@@ -107,10 +107,16 @@
 # print(s1.update([7,9]))                    op: None
 # print(s1)                                  op: {1, 2, 3, 4, 5, 7, 8 ,9}
 
-# print(s1.update(7,8))                        
+# print(s1.update(7))                        
 # print(s1)                                  'int' object is not iterable
 
-# print(s1.update({7,9,10}))                      op: None
+# print(s1.update((7,)))                     op: None
+# print(s1)                                  op: {1, 2, 3, 4, 5, 7, 8}
+
+# print(s1.update((7,9)))                    op: None
+# print(s1)                                  op: {1, 2, 3, 4, 5, 7, 8 ,9}
+
+# print(s1.update({7,9,10}))                 op: None
 # print(s1)                                  op: {1, 2, 3, 4, 5, 7, 8, 9, 10}
 
 # s1={1,3,5,7}
