@@ -17,7 +17,7 @@
 # s2={1,2.3,"don",4+5j}                     
 # print(s2)                                 op: {1, 2.3, (4+5j), 'don'}         hetro
 
-            # set can have duplicate elements
+            # set can not have duplicate elements
 
 # s1={1,2,4,6,1,4}
 # print(s1)                                 op: {1, 2, 4, 6}
