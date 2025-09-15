@@ -6,6 +6,11 @@
 # l1=[0,2,4,[1,3,5]]                                        [0, 2, 4, [1, 3, 5]] <class 'list'>  nested list
 # print(len(l1))                                            op: 4                                length of list
 
+# l1=[1,2,3]
+# l2=[5,7,8,9]
+# print(l1+l2)                                              op: [1, 2, 3, 5, 7, 8, 9]            <class 'list'> concatenation of list
+# print(l1*3)                                               op: [1, 2, 3, 1, 2, 3, 1, 2, 3]      <class 'list'> repetition of list
+
 # l1=[1, 2, 3, (1, 2, 3)]                                   
 # print(type(l1[3]))                                        <class 'tuple'>
 # print(l1,type(l1))                                        [1, 2, 3, (1, 2, 3)] <class 'list'>
@@ -202,3 +207,4 @@
 
 # print(l1.remove(5))               op: None
 # l1.remove()                       op: list.remove() takes exactly one argument
+# l1.remove(10)                     op: ValueError: list.remove(x): x not in list
