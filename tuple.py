@@ -22,7 +22,10 @@
 # print(type(t[3]))                             <class 'dict'>
 # print(t,type(t))                              (1, 2, 3, {'a': 'apple', 'b': 'bat'}) <class 'tuple'>
 
-
+# t1=(1,2,3)
+# t2=(5,6,7,8)
+# print(t1+t2)                                  op: (1, 2, 3, 5, 6, 7, 8)           <class 'tuple'> concatenation of tuple
+# print(t1*3)                                   op: (1, 2, 3, 1, 2, 3, 1, 2, 3)     <class 'tuple'> repetition of tuple
 
 # property of tuples
 
