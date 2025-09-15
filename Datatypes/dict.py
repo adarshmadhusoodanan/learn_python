@@ -1,6 +1,8 @@
 # defining dictionary: Group of key value pairs separated by coma and enclosed within curly braces{}
 # syntax: {key:value,key:value,....}
 
+#------------------------------------------------------------------------------------------------------------------------------------------------
+
 # d1={1:10,2:20,3:30,4:40}
 # print(d1,len(d1),type(d1))                          op: {1: 10, 2: 20, 3: 30, 4: 40} 4 <class 'dict'>
 
@@ -11,6 +13,13 @@
 # d2={1:10,2:20,3:30,4:40}
 # print(d1+d2)                                        op: TypeError: unsupported operand type(s) for +: 'dict' and 'dict'
 # print(d1*3)                                         op: TypeError: unsupported operand type(s) for *: 'dict' and 'int'
+
+# note: 
+#       dict comprehension is also there
+# d1={i:i*10 for i in range(1,6)}
+# print(d1)                                           op: {1: 10, 2: 20, 3: 30, 4: 40, 5: 50}   <class 'dict'>
+
+#------------------------------------------------------------------------------------------------------------------------------------------------
 
 # property of dict
 
@@ -38,7 +47,7 @@
 # print(d1[1])                                        op: KeyError: 1
 
 # print(d1['A'])                                      op: apple
-# print(d1['a'])                                      op: KeyError: 'a'
+# print(d1['a'])                                      op: KeyError: 'a' - case sensitive
 
             # dict keys are immutable and values are mutable
 
@@ -54,17 +63,20 @@
 # d2={1:10,2.5:"don",3+4j:[1,2,3],True:{1,2,3},(1,2):"het",[1,2,3]:"list"}
 # print(d2,type(d2))                                 op: TypeError: unhashable type: 'list'
 
-            # looping in dict
 
-# d1={'A':"apple",'B':"bat",'C':"cat",'D':'dog'}
+#------------------------------------------------------------------------------------------------------------------------------------------------
+            
+# looping in dict
+
+d1={'A':"apple",'B':"bat",'C':"cat",'D':'dog'}
 
             # fetching only keys:
 
 # for i in d1:
-#     print(i,end=" ")                                op: A B C D
+#     print(i,end=" ")                               # op: A B C D
 
 # res1=d1.keys()
-# print(res1,type(res1))                              op: dict_keys(['A', 'B', 'C', 'D']) <class 'dict_keys'>
+# print(res1,type(res1))                              #op: dict_keys(['A', 'B', 'C', 'D']) <class 'dict_keys'>
 
 # for i in d1.keys():
 #     print(i,end=" ")                                op: A B C D
@@ -84,6 +96,9 @@
 
 # res3=d1.items()
 # print(res3,type(res3))                              op: dict_items([('A', 'apple'), ('B', 'bat'), ('C', 'cat'), ('D', 'dog')]) <class 'dict_items'>
+
+
+#------------------------------------------------------------------------------------------------------------------------------------------------
 
 # dict built-in methods 
 

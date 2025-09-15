@@ -28,6 +28,12 @@
 # print(type(l1[4]))                                        #<class 'dict'>
 # print(l1,type(l1))                                        #[1, 2.3, (2+4j), True, {'a': 'apple', 'b': 'bat'}] <class 'list'>
 
+
+# note: 
+#       list comprehension is also there
+# l1=[x for x in range(10)]
+# print(l1,type(l1))                                        #op: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] <class 'list'>
+
 #------------------------------------------------------------------------------------------------------------------------------------------------
 
 # property of list

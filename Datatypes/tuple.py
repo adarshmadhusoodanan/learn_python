@@ -33,6 +33,12 @@
 # print(t1*3)                                   op: (1, 2, 3, 1, 2, 3, 1, 2, 3)     <class 'tuple'> repetition of tuple
 
 
+# Note: 
+#       tuple comprehension is not there because it will be considered as generator expression
+
+# t = (x for x in range(10))
+# print(t)                  #op: <generator object <genexpr> at 0x000001E2B0C8B040>
+# print(type(t))            #op: <class 'generator'>
 #------------------------------------------------------------------------------------------------------------------------------------------------
 
 # property of tuples
@@ -89,9 +95,3 @@
 # print(t.index(1,1,4))     op:3
 
 
-# Note: 
-#       tuple comprehension is not there because it will be considered as generator expression
-
-# t = (x for x in range(10))
-# print(t)                  #op: <generator object <genexpr> at 0x000001E2B0C8B040>
-# print(type(t))            #op: <class 'generator'>
