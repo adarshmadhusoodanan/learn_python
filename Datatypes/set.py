@@ -7,6 +7,11 @@
 # s1=set()                                  empty set
 # print(s1,type(s1))                        set() <class 'set'>
 
+# s1={1,2,3,4,5,1,2}
+# s2={3,4,5,6,7,8}
+# print(s1+s2)                                op: TypeError: unsupported operand type(s) for +: 'set' and 'set'
+# print(s1*3)                                 op: TypeError: unsupported operand type(s) for *: 'set' and 'int'
+
 # property of sets
 
             # set can be homogenous or heterogenous
