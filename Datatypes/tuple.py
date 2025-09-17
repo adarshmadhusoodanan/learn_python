@@ -1,3 +1,8 @@
+# Python Tuples Datatype
+# Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+# Tuple are written with round brackets ()
+#------------------------------------------------------------------------------------------------------------------------------------------------
+
 # defining tuple
 
 # t=,                                           SyntaxError: invalid syntax
@@ -26,6 +31,15 @@
 # t2=(5,6,7,8)
 # print(t1+t2)                                  op: (1, 2, 3, 5, 6, 7, 8)           <class 'tuple'> concatenation of tuple
 # print(t1*3)                                   op: (1, 2, 3, 1, 2, 3, 1, 2, 3)     <class 'tuple'> repetition of tuple
+
+
+# Note: 
+#       tuple comprehension is not there because it will be considered as generator expression
+
+# t = (x for x in range(10))
+# print(t)                  #op: <generator object <genexpr> at 0x000001E2B0C8B040>
+# print(type(t))            #op: <class 'generator'>
+#------------------------------------------------------------------------------------------------------------------------------------------------
 
 # property of tuples
 
@@ -62,8 +76,12 @@
 # print(t[-1::-1])          op: (4, 3, 2, 1)
 # print(t[1::2])            op: (2, 4)
 # print(t[:3])              op: (1, 2, 3)
+# print(t[::-1])            op: (4, 3, 2, 1)
+
+#------------------------------------------------------------------------------------------------------------------------------------------------
 
 # tuple built-in functions
+
             # tuple.count(value) -> int
 
 # t = (1,2,3,1,4,1,5)
@@ -75,3 +93,5 @@
 # print(t.index(1))         op:0
 # print(t.index(1,4))       op:5
 # print(t.index(1,1,4))     op:3
+
+
