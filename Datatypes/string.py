@@ -158,16 +158,6 @@
 
             # 8. string.isupper() -> bool
 
-<<<<<<< HEAD
-            # string.find(value, start, end) -> int
-
-# s1='hellohello'
-# print(s1.find('l'))                                  op: 2
-# print(s1.find('lo'))                                 op: 3
-# print(s1.find('lo',5))                               op: 8
-# print(s1.find('lo',0,5))                             op: 3
-# print(s1.find('z'))                                  op: -1       #if substring not found it returns -1
-=======
 # s1='HELLO'
 # print(s1.isupper())                                  op: True
 # s1='Hello'
@@ -182,7 +172,6 @@
 # print(s1.isupper())                                  op: True
 # s1='HELLO World'
 # print(s1.isupper())                                  op: False
->>>>>>> b357ee7de131a671915eb32b78291a2b3bb7eb20
 
             # 9. string.istitle() -> bool
 # s1='Adarsh'
@@ -311,7 +300,6 @@
 
             # 18. string.isprintable() -> bool
 
-<<<<<<< HEAD
 
 # print(s1.isupper())                                  op: True
 # s1='HELLO 123'
@@ -320,43 +308,9 @@
 # print(s1.isupper())                                  op: True
 # s1='HELLO World'
 # print(s1.isupper())                                  op: False
-
-            # string.lower() -> str
-
-# s1='Hello@123'
-# print(s1.lower())                                   op: hello@123 <class 'str'>
-# s1='HELLO@123'
-# print(s1.lower())                                   op: hello@123 <class 'str'>
-# s1='hello@123'
-# print(s1.lower())                                   op: hello@123 <class 'str'>   
-# s1='hello@123'
-# print(s1.lower())                                   op: hello@123 <class 'str'>
-
-            # string.upper() -> str 
-
-# s1='Hello@123'
-# print(s1.upper())                                   op: HELLO@123 <class 'str'>
-# s1='HELLO@123'
-# print(s1.upper())                                   op: HELLO@123 <class 'str'>
-# s1='hello@123'
-# print(s1.upper())                                   op: HELLO@123 <class 'str'>
-# s1='hello@123'
-# print(s1.upper())                                   op: HELLO@123 <class 'str'>
-
-            # string.replace(old, new, count) -> str    
-=======
-# s1='adarsh madhu'
-# print(s1.isprintable())                              op: True
-# s1='Keerthana\nGowda'                                   
-# print(s1)                                            op:Keerthana
-#                                                         Gowda
-# print(s1.isprintable())                              op: False
-# s1=r'keerthana\nGowda'
-# print(s1)                                            op: keerthana\nGowda  
-# print(s1.isprintable())                              op: True                      
+                 
                 
             # 19. string.count(value, start, end) -> int
->>>>>>> b357ee7de131a671915eb32b78291a2b3bb7eb20
 
 # s1='hellohello'
 # print(s1.count('l'))                                 op: 4
@@ -469,12 +423,8 @@
 # print(s1.replace('lo','LO'))                        op: helLOhelLO <class 'str'>
 # print(s1.replace('lo','LO',2))                      op: helLOhelLO <class 'str'>
 # print(s1.replace('z','Z'))                          op: hellohello <class 'str'>
-
-<<<<<<< HEAD
-            # string.split(sep=None, maxsplit=-1) -> list   
-=======
+ 
             # 32. string.split(sep=None, maxsplit=-1) -> list   
->>>>>>> b357ee7de131a671915eb32b78291a2b3bb7eb20
 
 # s1='hello world'
 # print(s1.split())                                   op: ['hello', 'world'] <class 'list'>
@@ -627,7 +577,6 @@ print(s1.encode())                                  #op: b'Keerthi'
 # s1.format_map
 
 
-<<<<<<< HEAD
            # string.partition(sep) -> tuple
 
 # partition() method searches for a specified string and splits the string into a tuple containing three elements.
@@ -663,5 +612,3 @@ print(s1.encode())                                  #op: b'Keerthi'
 
 
 
-=======
->>>>>>> b357ee7de131a671915eb32b78291a2b3bb7eb20
