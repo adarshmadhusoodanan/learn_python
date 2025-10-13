@@ -1,15 +1,19 @@
 # Python String Datatype
 # String is a collection which is ordered and unchangeable. Allows duplicate members.
 # String are written with single, double or triple quotes
+
 #------------------------------------------------------------------------------------------------------------------------------------------------
+
 #                   defining string
+
 # s1='hello'                                            'hello' <class 'str'>               define with single quotes
 # s1="hello"                                            'hello' <class 'str'>               define with double quotes
 # s1='''hello'''                                        'hello' <class 'str'>               define with triple quotes
 # s1="""hello"""                                        'hello' <class 'str'>               define with triple quotes
 # s1=''                                                 '' <class 'str'>                    empty string
 
-# s1="hello world"                                     'hello world' <class 'str'>         string with space
+
+# s1="hello world"                                     'hello world' <class 'str'>           string with space
 # print(len(s1))                                        op: 11                               length of string
 
 # s1='''hello
@@ -296,15 +300,15 @@
 
             # 18. string.isprintable() -> bool
 
-# s1='adarsh madhu'
-# print(s1.isprintable())                              op: True
-# s1='Keerthana\nGowda'                                   
-# print(s1)                                            op:Keerthana
-#                                                         Gowda
-# print(s1.isprintable())                              op: False
-# s1=r'keerthana\nGowda'
-# print(s1)                                            op: keerthana\nGowda  
-# print(s1.isprintable())                              op: True                      
+
+# print(s1.isupper())                                  op: True
+# s1='HELLO 123'
+# print(s1.isupper())                                  op: True
+# s1='HELLO WORLD'
+# print(s1.isupper())                                  op: True
+# s1='HELLO World'
+# print(s1.isupper())                                  op: False
+                 
                 
             # 19. string.count(value, start, end) -> int
 
@@ -419,7 +423,7 @@
 # print(s1.replace('lo','LO'))                        op: helLOhelLO <class 'str'>
 # print(s1.replace('lo','LO',2))                      op: helLOhelLO <class 'str'>
 # print(s1.replace('z','Z'))                          op: hellohello <class 'str'>
-
+ 
             # 32. string.split(sep=None, maxsplit=-1) -> list   
 
 # s1='hello world'
@@ -571,5 +575,40 @@ s1='Keerthi'
 print(s1.encode())                                  #op: b'Keerthi'
 
 # s1.format_map
+
+
+           # string.partition(sep) -> tuple
+
+# partition() method searches for a specified string and splits the string into a tuple containing three elements.
+# The first element contains the part before the specified string.
+# The second element contains the specified string.
+# The third element contains the part after the string.
+
+
+# s1='hello world python programming'
+# print(s1.partition(' '))                            op: ('hello', ' ', 'world python programming') <class 'tuple'>
+# s1='hello@world@python@programming'
+# print(s1.partition('@'))                            op: ('hello', '@', 'world@python@programming') <class 'tuple'>
+
+# s1='hello world python programming'
+# print(s1.partition('#'))                            #   op: ('hello world python programming', '', '') <class 'tuple'>
+
+# s1='hello'
+# print(s1.partition(' '))                            op: ('hello', '', '') <class 'tuple'>
+
+# s1=''
+# print(s1.partition(' '))                            op: ('', '', '') <class 'tuple
+
+# s1 = 'hello@world@python@programming'
+# print(s1.partition('rl'))                           # op: ('hello@wo', 'rl', 'd@python@programming') <class 'tuple'>                 
+
+# s1 = 'hello@world@python@programming'
+# print(s1.partition('pt'))                             # op: ('hello@world@python@programming', '', '') <class 'tuple'>
+
+
+#                       
+
+#------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
