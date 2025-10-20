@@ -8,7 +8,7 @@
 # l1=[1,2,3,4,5]                                            [1, 2, 3, 4, 5] <class 'list'>       define
 # l1=[]                                                     [] <class 'list'>                    empty list
 
-# l1=[0,2,4,[1,3,5]]                                        #[0, 2, 4, [1, 3, 5]]<class 'list'>  nested list
+# l1=[0,2,4,[1,3,5]]                                        #[0, 2, 4, [1, 3, 5]]<class 'list'>   nested list
 # print(len(l1))                                            #op: 4                                length of list
 
 # l1=[1,2,3]
