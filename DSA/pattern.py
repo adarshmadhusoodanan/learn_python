@@ -268,5 +268,106 @@ def pattern20(n):
         for j in range(2):
             print(chr(65+j),end="")
         print()
-n=int(input("enter n:"))
-pattern20(n)
+
+
+def pattern21(n):
+    pass
+# n=int(input("enter n:"))
+# pattern20(n)
+
+#-----------------------------
+
+# row = int(input("row: "))
+# col = int(input("col: "))
+
+# val=1
+# for i in range(row):
+#     val=1
+#     for j in range(col):
+#         if j%2==0:
+#             print(val,end=" ")
+#             val+=1
+#         else:
+#             print("*", end=" ")
+#     print()
+
+# op
+# 1 * 2 * 3 * 4 * 5 * 
+# 1 * 2 * 3 * 4 * 5 * 
+# 1 * 2 * 3 * 4 * 5 * 
+# 1 * 2 * 3 * 4 * 5 * 
+# 1 * 2 * 3 * 4 * 5 *
+
+#-----------------------------
+
+# row = int(input("row: "))
+# col = int(input("col: "))
+
+# val = 1
+# p = True
+# for i in range(row):
+    
+#     for j in range(col):
+#         if p:
+#             print(val, end=" ")
+#             val+=1
+#             p = False
+#         else:
+#             print("*", end=" ")
+#             p = True
+
+#         if val>9:
+#             val=1
+    
+#     print()
+
+# op
+# row: 5
+# col: 10
+# 1 * 2 * 3 * 4 * 5 * 
+# 6 * 7 * 8 * 9 * 1 *
+# 2 * 3 * 4 * 5 * 6 *
+# 7 * 8 * 9 * 1 * 2 *
+# 3 * 4 * 5 * 6 * 7 *
+
+#-----------------------------
+    
+# row = int(input("row: "))
+# col = int(input("col: "))
+
+# val = ord("A")
+# p = True
+# for i in range(row):
+    
+#     for j in range(col):
+#         if p:
+#             print(chr(val), end=" ")
+#             val+=1
+#             p = False
+#         else:
+#             print("*", end=" ")
+#             p = True
+
+#         if val>ord("Z"):
+#             val=ord("A")
+    
+#     print()
+
+# op
+
+# row: 10
+# col: 10
+# A * B * C * D * E * 
+# F * G * H * I * J *
+# K * L * M * N * O *
+# P * Q * R * S * T *
+# U * V * W * X * Y *
+# Z * A * B * C * D *
+# E * F * G * H * I *
+# J * K * L * M * N *
+# O * P * Q * R * S *
+# T * U * V * W * X *
+
+#--------------------------
+
+
