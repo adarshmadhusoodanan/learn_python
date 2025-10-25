@@ -541,4 +541,3 @@ n=int(input("enter number "))
 # #   *
 # #     2
 # #       *
-
