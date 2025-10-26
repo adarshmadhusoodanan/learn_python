@@ -64,7 +64,7 @@
 
 # -------------------------------------------------------------------------------------------------------
 
-n=int(input("enter number "))
+
 # for i in range (n):
 #     for j in range(n):
 #         print(i, end="")
@@ -333,6 +333,7 @@ n=int(input("enter number "))
 #             print(" ",end=" ")
 #     val+=1
 #     print()
+
 # # A A A A 
 # #   B B B
 # #     C C
@@ -542,3 +543,280 @@ n=int(input("enter number "))
 # #     2
 # #       *
 
+# n=int(input("n: "))
+# val = 1
+# p=True
+# for i in range(n):
+#     for j in range(n):
+#         if i==j:
+#             if p:
+#                 print(val,end="")
+#                 val+=1
+#                 p=False
+#             else:
+#                 print("*", end=" ")
+#                 p=True
+#         else:
+#             print(" ", end=" ")
+#     print()
+
+#-------------------------------------------------------------
+
+#assignment 2
+
+# n =int(input("n:  "))
+# for i in range(n):
+#     for j in range(n):
+#         if i+j==n-1:
+#             print("*", end=" ")
+#         else:
+#             print(" ", end=" ")
+#     print()
+    
+
+# n:  4
+#       * 
+#     *   
+#   *     
+# *
+
+# val=1
+# for i in range(n):
+#     for j in range(n):
+#         if i+j==n-1:
+#             print(val, end=" ")
+#             val+=1
+#         else:
+#             print(" ", end=" ")
+#     print()
+
+# n:  4
+#       1 
+#     2
+#   3
+# 4
+
+# val=n
+# for i in range(n):
+#     for j in range(n):
+#         if i+j==n-1:
+#             print(val, end=" ")
+#             val-=1
+#         else:
+#             print(" ", end=" ")
+#     print()
+
+# n:  4
+#       4 
+#     3
+#   2
+# 1
+
+# val=ord("A")
+# for i in range(n):
+#     for j in range(n):
+#         if i+j==n-1:
+#             print(chr(val), end=" ")
+#             val+=1
+#         else:
+#             print(" ", end=" ")
+#     print()
+
+# n:  4
+#       A 
+#     B
+#   C
+# D
+
+# n= int(input("n: "))
+
+# val=ord("A")+n-1
+# for i in range(n):
+#     for j in range(n):
+#         if i+j==n-1:
+#             print(chr(val), end=" ")
+#             val-=1
+#         else:
+#             print(" ", end=" ")
+#     print()
+
+# n: 4
+#       D 
+#     C
+#   B
+# A
+
+# val=1
+# p=True
+# for i in range(n):
+#     for j in range(n):
+#         if i+j==n-1:
+#             if p:
+#                 print(val, end=" ")
+#                 p=False
+#                 val+=1
+#             else:
+#                 print("*", end=" ")
+#                 p=True
+
+#         else:
+#             print(" ", end=" ")
+#     print()
+
+# n: 4
+#       1 
+#     *
+#   2
+# *
+
+
+# for i in range(n):
+#     for j in range(n):
+#         if i+j>=n-1:
+#             print("*", end=" ")
+#         else:
+#             print(" ", end=" ")
+#     print()
+
+
+# n: 4
+#       * 
+#     * *
+#   * * *
+# * * * *
+
+
+# val=1
+
+# for i in range(n):
+#     for j in range(n):
+#         if i+j>=n-1:
+#             print(val, end=" ")
+#             val+=1
+#         else:
+#             print(" ", end=" ")
+
+#         if val>9:
+#             val=1
+#     print()
+
+
+# n: 5
+#         1 
+#       2 3
+#     4 5 6
+#   7 8 9 1
+# 2 3 4 5 6
+
+# val=1
+
+# for i in range(n):
+#     for j in range(n):
+#         if i+j>=n-1:
+#             print(val, end=" ")
+#         else:
+#             print(" ", end=" ")
+    
+#         if val>9:
+#             val=1
+#     val+=1
+#     print()
+
+
+# n: 4
+#       1 
+#     2 2
+#   3 3 3
+# 4 4 4 4
+
+
+# for i in range(n):
+#     val=1
+#     for j in range(n):
+#         if i+j>=n-1:
+#             print(val, end=" ")
+#             val+=1
+#         else:
+#             print(" ", end=" ")
+    
+#         if val>9:
+#             val=1
+        
+#     print()
+
+# n: 4
+#       1 
+#     1 2
+#   1 2 3
+# 1 2 3 4
+
+# val=1
+# p=True
+# for i in range(n):
+#     for j in range(n):
+#         if i+j<=n-1 or (i==2 and j==2):
+#             if p:
+#                 print(val,end=" ")
+#                 val+=1
+#                 p=False
+#             else:
+#                 print("*",end=" ")
+#                 p=True
+#         else:
+#             print(" ", end=" ")
+#     print()
+
+
+# n: 4
+# 1 * 2 * 
+# 3 * 4
+# * 5 *
+# 6
+
+
+# pyramid --------------------------------------------------------
+
+
+# for i in range(n):
+#     for j in range(n-i):
+#         print(" ", end=" ")
+    
+#     for k in range(2*i+1):
+#         print("*", end=" ")
+
+#     print()
+
+# n: 5
+#           * 
+#         * * *
+#       * * * * *
+#     * * * * * * *
+#   * * * * * * * * *
+
+# another wayyy
+
+n = int(input("n:  "))
+
+# str=1
+# spc=n-1
+# for i in range(n):
+#     for j in range(spc):
+#         print(" ", end=" ")
+    
+#     for k in range(str):
+#         print("*", end=" ")
+    
+#     spc-=1
+#     str+=2
+#     print()
+
+# simple wayyy
+
+# for i in range(n):
+#     print("  "*(n-1-i)+"* "*(2*i+1))
+
+#         * 
+#       * * *
+#     * * * * *
+#   * * * * * * *
+# * * * * * * * * *
