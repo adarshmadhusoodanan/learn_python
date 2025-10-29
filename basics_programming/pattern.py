@@ -820,3 +820,50 @@ n = int(input("n:  "))
 #     * * * * *
 #   * * * * * * *
 # * * * * * * * * *
+
+# val =1
+# for i in range(n):
+#     for j in range(n-i):
+#         print(" ", end=" ")
+    
+#     for k in range(2*i+1):
+#         print(val, end=" ")
+#         val+=1
+#         if val>9:
+#             val=1
+
+#     print()
+
+# n:  5
+#           1 
+#         2 3 4
+#       5 6 7 8 9
+#     1 2 3 4 5 6 7
+#   8 9 1 2 3 4 5 6 7
+
+# p=True
+# val=1
+# for i in range(n):
+#     for j in range(n-i):
+#         print(" ",end=" ")
+    
+#     for k in range(2*i-1):
+#         if p:
+#             print(val,end=" ")
+#             val+=1
+#             p = False
+#             if val>9:
+#                 val=1
+#         else:
+#             print("*", end=" ")
+#             p=True
+#     print()
+
+# n:  5
+
+#         1
+#       * 2 *
+#     3 * 4 * 5
+#   * 6 * 7 * 8 *
+
+
