@@ -22,20 +22,20 @@
 
 # starting from 1
 
-# n = int(input("enter number: "))
-# fact =1
-# for i in range(1,n+1):
-#     fact = fact*i
-#     print(f"{fact} x {i}")
-# print(fact)
+n = int(input("enter number: "))
+fact =1
+for i in range(1,n+1):
+    fact = fact*i
+    print(f"{fact} x {i}")
+print(fact)
 
-# print("using while loop")
-# i=1
-# fact=1
-# while i<n+1:
-#     fact= fact*i
-#     i+=1
-# print(fact)
+print("using while loop")
+i=1
+fact=1
+while i<n+1:
+    fact= fact*i
+    i+=1
+print(fact)
 
 #-----------------------------------------------------------
 
@@ -75,6 +75,8 @@
 # else:
 #     print("not amstrong number")
 
+#---------------------------------------------------
+
 # WAP TO CHECK the given number i strong or not
 
 # def factorial(n):
@@ -96,6 +98,9 @@
 #     print("strong number")
 # else:
 #     print("not strong number")
+
+
+#---------------------------------------------------
 
 # WAP to check perfect number 
 
@@ -119,6 +124,8 @@
 #     print("not perfect number")
 
 
+#---------------------------------------------------
+
 # WAP give all the perfet number in the given range
 
 # WAP to find sum of a given number 
@@ -131,9 +138,12 @@
 #     num//=10
 # print(sum)
 
+
+#---------------------------------------------------
+
 # WAP to reverse the given number
 
-num = int(input("enter a nubmer"))
+# num = int(input("enter a nubmer"))
 
 # while num!=0:
 #     rem = num%10
@@ -147,6 +157,8 @@ num = int(input("enter a nubmer"))
 #     num //= 10
 # print(res)
 
+
+#---------------------------------------------------
 
 # CHECK the given number is special number or not  
 # s,p = 0,1
@@ -162,6 +174,8 @@ num = int(input("enter a nubmer"))
 # else:
 #     print("not special number")
 
+
+#---------------------------------------------------
 
 # program to check given number us a dusarium number or not
 # l = len(str(num))
@@ -181,6 +195,8 @@ num = int(input("enter a nubmer"))
 #     print("no it is not")
 
 
+#---------------------------------------------------
+
 # find the frequency of the number
 # d={}
 # while num!=0:
@@ -195,10 +211,15 @@ num = int(input("enter a nubmer"))
 # for k,v in d.items():
 #     print(k,"->",v)
 
+
+#---------------------------------------------------
+
 # program to check automorphic number or not
 
 
-    
+
+
+#---------------------------------------------------
 
 # program to check the given number is palindrome or not
 
@@ -213,6 +234,9 @@ num = int(input("enter a nubmer"))
 #     print("palindrome")
 # else:
 #     print("not palindrome")
+
+
+#---------------------------------------------------
 
 # program to check the given number is evil or odius number 
 
@@ -240,6 +264,9 @@ num = int(input("enter a nubmer"))
 # else:
 #     print("odius number")
 
+
+#---------------------------------------------------
+
 # WAP to shift all odd number to the first place and even numbers to the last place in agiven number
 
 # temp = 1
@@ -255,6 +282,8 @@ num = int(input("enter a nubmer"))
 #         print(num)
 # print(res)
 
+
+#---------------------------------------------------
 
 # wAp TO check the number is prime or not
 
@@ -288,6 +317,8 @@ num = int(input("enter a nubmer"))
 # enter a nubmer12
 # 2 2 3 
 
+#---------------------------------------------------
+
 # program to check the given number is zuker man number or not
 # - it is a number which is completely divisible by its product of a given number
 # - input 24
@@ -309,8 +340,12 @@ num = int(input("enter a nubmer"))
 #         print("not zukerman number")
 
 # zuker_man(num)
+
+
+#---------------------------------------------------
     
 # program to check given number is a smith number
+
 # def digit_sum(num):
 #     sum=0
 #     while num !=0:
@@ -374,32 +409,36 @@ num = int(input("enter a nubmer"))
 #     print("it is not smith number")
 
 
+#---------------------------------------------------
+
+
 # wAp to check the given number is ugly number or not
 
 # it is a number which includes the prime factors like 2 or 3 or 5 only,  if it is getting any other prime factor then it is not an ugly number
 # number which contains only the prime factors=> 2 3 5
 
-def prime_fators(num):
-    factors = []
-    factor = 2
-    while num != 1:
-        if num % factor == 0:
-            factors.append(factor)
-            num = num // factor
-        else:
-            factor = factor + 1
-    return factors
+# def prime_fators(num):
+#     factors = []
+#     factor = 2
+#     while num != 1:
+#         if num % factor == 0:
+#             factors.append(factor)
+#             num = num // factor
+#         else:
+#             factor = factor + 1
+#     return factors
 
 
-res = prime_fators(num)
-print(res)
-for i in res:
-    if i == 2 and i == 3 and i == 5:
-        print("ugly number")
-        break
-    else:
-        print(" not ugly number")
-        break
+# res = prime_fators(num)
+# print(res)
+# for i in res:
+#     if i == 2 and i == 3 and i == 5:
+#         print("ugly number")
+#         break
+#     else:
+#         print(" not ugly number")
+#         break
     
 
-    
+
+#---------------------------------------------------
