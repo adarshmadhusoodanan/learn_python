@@ -1,0 +1,101 @@
+Variable: Name given to memory location is called variable 
+    a=10 ---> data
+    |__ variable
+Identifier: All the name used in the program are  called Identifier 
+    Ex: Class name, function name, variable name, object name 
+    Variable is also identifier 
+Identifier rules:
+    It is alpha numeric
+    It should not start with numbers
+    Special characters are not allowed except '_'
+    Keywords are not allowed 
+
+Keywords: Predefined words which has its own meaning 
+All keywords are in-built identifiers 
+
+Output Statements:
+    Print functions is Output function in python which is used to display the data.
+    Print function accepts three parameters:
+        1. * values --> val1,val2,val3...valn
+        Default :
+        2. Seperator(sep) : '/t'  tab space --> default value
+        3. End(end) : '/n'  new line /next line --> default 
+    Ex: print(100,900,800,sep='--',end='*')
+        print('python')
+    op: 100--900-800*python 
+
+Commant lines:
+    These are non executable part 
+    These lines are used to hide some of the lines of codes in program or 
+    to provide some messages to the program 
+    There are two types: 
+        Single line(#)
+        Multi line(''' ''')
+
+Data: It is the information collected and stored in a structured manner 
+Datatype: It defines the type of data that a variable can hold
+    Datatype
+     |_______Primitive/Single value 
+                1.Numeric 
+                    int 
+                    float
+                    complex
+                2.String/text(str)
+                    '',"","' '"
+                3.Boolean(bool)
+                    True
+                    False 
+     |_______Non-Primitive/multivalue/grouped/collection 
+                1.List []
+                2.Tuples ()
+                3.Set {}
+                4.Dictonary {key:value}
+
+type():It is a inbuilt function which is used to check the type of data stored in a variable
+    Return type is Null 
+    syntax: type(variable)
+    a=100
+    print(type(a))    <class 'int'>
+
+Input Statements: 
+    It is a built-in function which is used to accept dynamic values or the inputs from the user 
+    Return type is 'String'
+    syntax: variable=input("message")
+    ex: a=input("Enter a number")
+
+Note: input() is designed in such a way that it accepts input only in string datatype 
+If we provide the data like int, float, complex it takes and converts it into string data type 
+To overcome this we have to perform type casting or type conversion 
+
+Type Casting or Type Conversion:
+    It is a process of converting one type of data into another type of data 
+    Syntax: var=datatype(input('message'))
+    Ex: a=int(input())
+    Two types of Type Casting 
+        Implict Typecasting
+        Explict Typecasting 
+
+    Implict Typecasting: Python interpreter automatically converts one type of data
+    into another type of data
+    Ex: a=10
+        b=2.5
+        c=a+b
+        print(c,type(c))        
+    op: 12.5 <class 'float'> 
+
+    Explicit Typecasting: Here users are forcefully converting one type of data 
+    into another type
+    Ex: age=float(input('Enter age'))
+        print(age)
+    op: Enter age:21
+        21.0
+
+  value   |    int()    |   float()   | complex()   |   str()   |  bool
+  ________|_____________|_____________|_____________|___________|__________
+  '100'   |    100      |   100.0     |  (100+0j)   |           |
+  '10.5'  | value error |   10.5      |  (10.5+0j)  |   convert |
+  'Don'   | value error | value error | value error |   any     |0--> False 
+  '1+2j'  | value error | value error |  (1+2j)     |   value   |1--> True
+   100    |    100      |   100.0     |  (100+0j)   |   into    |
+   10.5   |    10       |   10.5      |  (10.5+0j)  |   string  |
+  (1+2j)  | type error  | type error  |  (1+2j)     |           |
