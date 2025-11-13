@@ -1,0 +1,88 @@
+Control Statements: These are the statements which are used to control and flow of execution of a program 
+    Types:
+        Branching/Conditional Statements
+            if 
+            if else
+            if elif
+            nested if 
+            match case 
+        Looping Statements
+            for 
+              -range
+              -iterable
+            while 
+
+Branching Statements:This are statements used to check some the conditions or make some decisions
+    If statements: Here if condition is True it exceutes 'if statements' or else terminates
+        if condition:
+            #statements
+    If-else statements: Here if condition is true it exceutes otherwise it exceutes the else statements 
+        Else block will not accept any condition else block is optional block 
+        if condition:
+            #statements
+        else:
+            #statements
+    If-elif statements: Used when there are multiple conditions to check 
+        If any one of the condition is true the corresponding block exceutes and rest are skipped
+        if condition:
+            #statements 
+        elif conditon:
+            #statements
+        else:
+            #statements
+    Nested if: A if statement inside another if statement.
+    Used for checking multiple levelsof conditions
+        if condition:
+            #statements
+            if condition:
+                #statements
+    Match Case: Used as an alternative to multiple if-elif statements 
+        It matches a value against different possible cases 
+        match variable:
+            case value1:
+                #statement
+            case value2:
+                #statement
+            case _:
+                #default case 
+
+Looping: These statement are used to repeat a block of code based on condition 
+    The block will repeated untill the condition is False 
+
+    For Loop: For loop is used to iterate over a sequence 
+    Range
+    Syntax: for variable in range(start,stop,step):
+                #statement
+    Note: Start, stop, step value must be integers or else python will rise Type Error 
+          Step value cant be zero or else python will rise Value Error
+    Iterable 
+    Syntax: for variable in iterable:
+                #statement 
+
+    While Loop: While loop exceutes as long as the condition is True 
+    Syntax: initialization 
+                while condition:
+                    #statement
+                    update 
+
+Break Statement: Break is used to forcefully terminate the loop based on a condition 
+    Note: In case of nested loop break will terminate the immediate loop 
+    Ex: for i in range(1,10):
+            if i==4:
+                break
+            print(i,end=" ")
+    op: 1 2 3
+
+Continue: It is used to forcefully continue the loop by skipping present iteration 
+    Ex: for i in range(1,5):
+            if i==2:
+                continue
+            print(i,end=" ")
+    op: 1 3 4 
+
+Pass: To create empty block in python to avoid indintation error we use pass 
+    Ex: n=int(input())
+        if n==1:
+            pass
+        else:
+            print('No pass')
