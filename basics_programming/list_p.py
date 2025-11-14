@@ -249,37 +249,37 @@
 # print(l2) # [960, 240, 106, 60, 38]  
 
 #11#
-l1=['1','l','$','u','2','h','a','#','r','3','r','4']
-print(l1)
-# count the characters and numbers in l1
-count = 0
-for i in range(len(l1)):
-    if ord(l1[i]) >= 48 and ord(l1[i]) <= 57 or ord(l1[i]) >= 97 and ord(l1[i]) <= 122:
-        count+=1
-print(count)
+# l1=['1','l','$','u','2','h','a','#','r','3','r','4']
+# print(l1)
+# # count the characters and numbers in l1
+# count = 0
+# for i in range(len(l1)):
+#     if ord(l1[i]) >= 48 and ord(l1[i]) <= 57 or ord(l1[i]) >= 97 and ord(l1[i]) <= 122:
+#         count+=1
+# print(count)
 
-# #create a new list based the count
-l2 = [None]*count
-print(l2)   #[None, None, None, None, None, None, None, None, None, None]
+# # #create a new list based the count
+# l2 = [None]*count
+# print(l2)   #[None, None, None, None, None, None, None, None, None, None]
 
-# #add only characters and numbers to new list
-j=0
-for i in range(len(l1)):
-    if ord(l1[i]) >= 48 and ord(l1[i]) <=57 or ord(l1[i])>=97 and ord(l1[i]) <= 122:
-        l2[j] = l1[i]
-        j = j + 1
-print(l2)   #['1', 'l', 'u', '2', 'h', 'a', 'r', '3', 'r', '4']
+# # #add only characters and numbers to new list
+# j=0
+# for i in range(len(l1)):
+#     if ord(l1[i]) >= 48 and ord(l1[i]) <=57 or ord(l1[i])>=97 and ord(l1[i]) <= 122:
+#         l2[j] = l1[i]
+#         j = j + 1
+# print(l2)   #['1', 'l', 'u', '2', 'h', 'a', 'r', '3', 'r', '4']
 
-# #reverse the list
-l2 = l2[::-1]
-# print(l2) #['4', 'r', '3', 'r', 'a', 'h', '2', 'u', 'l', '1']
+# # #reverse the list
+# l2 = l2[::-1]
+# # print(l2) #['4', 'r', '3', 'r', 'a', 'h', '2', 'u', 'l', '1']
 
-j=0
-for i in range(len(l1)):
-    if ord(l1[i]) >= 48 and ord(l1[i]) <=57 or ord(l1[i])>=97 and ord(l1[i]) <= 122: 
-         l1[i] = l2[j]
-         j = j + 1
-print(l1)  #['4', 'r', '$', '3', 'r', 'a', 'h', '#', '2', 'u', 'l', '1']
+# j=0
+# for i in range(len(l1)):
+#     if ord(l1[i]) >= 48 and ord(l1[i]) <=57 or ord(l1[i])>=97 and ord(l1[i]) <= 122: 
+#          l1[i] = l2[j]
+#          j = j + 1
+# print(l1)  #['4', 'r', '$', '3', 'r', 'a', 'h', '#', '2', 'u', 'l', '1']
 #output:
 # ['1', 'l', '$', 'u', '2', 'h', 'a', '#', 'r', '3', 'r', '4']
 # ['4', 'r', '$', '3', 'r', 'a', 'h', '#', '2', 'u', 'l', '1']
@@ -293,3 +293,165 @@ print(l1)  #['4', 'r', '$', '3', 'r', 'a', 'h', '#', '2', 'u', 'l', '1']
 #         if is_num_or_char(l1[i]) and is_num_or_char(l1[j]):
 
 #             swap 1st and last e
+
+#-------------------------------------------------
+
+# flatterned the nested list
+
+# l1 = [[1,2,3], 5,6, [7,8,9,3],8,[5]]
+
+# res = []
+
+# for i in l1:
+#     if type(i) == list:
+#         for j in i:
+#             res.append(j)
+#     else:
+#         res.append(i)
+
+# print(l1)   #[[1, 2, 3], 5, 6, [7, 8, 9, 3], 8, [5]]
+# print(res)  #[1, 2, 3, 5, 6, 7, 8, 9, 3, 8, 5]
+#------------------------------------------
+
+
+#l1 = [2,1,89,70,3,10,90,23,5]
+
+# we have a list we need to find the mid element and sort the first half in ascennding order
+# and second half in descending order
+
+# def sort_asc(l):
+#     for i in range(len(l)):
+#         for j in range(i+1,len(l)):
+#             if l[i]>l[j]:
+#                 l[i], l[j] = l[j], l[i]
+#     return l 
+
+# def sort_desc(l):
+#     for i in range(len(l)):
+#         for j in range(i+1,len(l)):
+#             if l[i]<l[j]:
+#                 l[i], l[j] = l[j], l[i]
+#     return l 
+
+# l1 = [2,1,89,70,3,10,90,23,5]
+
+# first=[]
+# second=[]
+# for i in range(len(l1)//2):
+#     first.append(l1[i])
+# for j in range(len(l1)//2, len(l1)):
+#     second.append(l1[j])
+
+
+# print(first)
+# print(second)
+# print(sort_asc(first)+sort_desc(second))
+
+# another method
+
+# def sort_list(l1):
+#     mid= len(l1)//2
+#     # print(mid)
+
+#     # first half for ascending order
+#     for i in range(mid):
+#         for j in range(i+1, mid):
+#             if l1[i]>l1[j]:
+#                 l1[i], l1[j] = l1[j], l1[i]
+    
+#     #print(l1)
+
+#     # second half for the descending order
+
+#     for i in range(mid,len(l1)):
+#         for j in range(i+1, len(l1)):
+#             if l1[i]<l1[j]:
+#                 l1[i], l1[j] = l1[j], l1[i]
+
+#     return l1
+
+# l1 = [2,1,89,70,3,10,90,23,5]
+# print(sort_list(l1))
+
+
+
+#----------------------------------------------------------
+
+# display the index of first and last of the given input number
+
+# l1 = [2,3,1,10,3,4,6,3,18,20]
+# num = int(input("n: "))
+# for i in range(len(l1)):
+#     if num == l1[i]:
+#         findex = i
+#         # print(l1[i])
+#         break
+# for i in range(len(l1)-1,0,-1):
+#     if num == l1[i]:
+#         lindex = i
+#         break
+
+
+# print("first index: ", findex)
+# print("last index: ", lindex)
+
+# another way
+
+# def first_and_last(l1, val):
+#     first_idx = -1
+#     last_idx = -1
+
+#     for i in range(len(l1)):
+#         if val == l1[i]:
+#             if first_idx == -1:
+#                 first_idx = i
+#             last_idx = i
+#     return first_idx, last_idx
+
+# l1 = [2,3,1,10,3,4,6,3,18,20]
+# num = int(input("n: "))
+
+# f, l = first_and_last(l1, num)
+
+# print("first index: ", f)
+# print("last index: ", l)
+
+#-------------------------------------------------
+
+# display all the possible pairs of a target value
+
+# l1 = [2, 3, 1, 10, 3, 4, 6, 3, 5, 2]
+# target = 6
+# def target_sum(l1,target):
+#     result = []
+#     for i in range(len(l1)):
+        
+#         val = target-l1[i]
+#         # print(val)
+#         for j in range(i+1, len(l1)):
+#             if val == l1[j]:
+#                 result.append((l1[i],l1[j]))
+#     return result
+
+# print(target_sum(l1,target))
+
+#--------------------------------------------------------
+
+# output should be true or false
+
+# l1 = [5,5]
+
+# def check_last_digit_is_5(l1):
+#     result = True
+#     if l1 == []:
+#         result = False
+#         return result
+#     else:
+#         for val in l1:
+#             last_num = val% 10
+#             if last_num != 5:
+#                 result = False
+#                 break
+#     return result
+
+# print(check_last_digit_is_5(l1))
