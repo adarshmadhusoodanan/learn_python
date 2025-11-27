@@ -455,3 +455,119 @@
 #     return result
 
 # print(check_last_digit_is_5(l1))
+
+
+# anil wants to purchase a stock. after purchasing we need to sell in another day.
+#  to get the maximum profit. write a code to help anil when to purchase and when to sell to get a maximum profit.
+
+# l1 = [12,11,10,1,2,3,9]
+# l1 = [1,1]
+# l1=[1,2]
+# l1 = [2,1]
+# l1 = [3,2,1]
+
+# max_profit = 0
+# if len(l1)<2:
+#     print("buy and sell price is not there")
+# else:
+#     for i in range(len(l1)):
+#         for j in range(i+1,len(l1)):
+#             current_profit = abs(l1[i] - l1[j])
+#             if max_profit<=current_profit:
+#                 max_profit = current_profit
+#                 if l1[i]>l1[j]:
+#                     buy_index= j
+#                     sell_index= i
+#                 else:
+#                     buy_index= i
+#                     sell_index= j
+
+#     print(f"buy at {buy_index} and sell at {sell_index} then profit will be {max_profit}")
+
+#--------------------------------
+
+# display the majority element present in the list 
+
+# using dictionary
+
+# def check_majority_element(l1):
+#     d={}
+#     for i in l1:
+#         if i not in d:
+#             d[i] = 1
+#         else:
+#             d[i]+=1
+#     return d
+
+# l1 = [1]
+# print(check_majority_element(l1))
+
+# for k,v in check_majority_element(l1).items():
+#     if v > len(l1)//2:
+#         print("majority element-> ", k)
+#         print("count: ", v)
+#         break
+# else:
+#     print(-1)
+
+# using two pointer
+
+# l1 = [1,2,3,5]
+# def majority_element(l1):
+#     for i in range(len(l1)):
+#         count = 0
+#         for j in range(len(l1)):
+#             if l1[i] == l1[j]:
+#                 count += 1
+#             if count > len(l1) // 2:
+#                 return l1[i]
+#     return -1
+
+# print(majority_element(l1))
+
+#---------------------------------------
+
+
+# wap to display the list leaders present in a given list
+# two pointer method
+
+# l1 = [16,17,2,3,5,2]
+# def find_leader(l1):
+#     leader = []
+#     for i in range(len(l1)):
+#         for j in range(i+1, len(l1)):
+#             if l1[i]<l1[j]:
+#                 break
+#         else:
+#             leader.append(l1[i])               
+#     return leader
+# print(find_leader(l1))
+
+#-------------------------------------------
+
+# wap to increase and decrease height of a given element based on the k th value 
+# and then display the difference of maximum and minimum element.
+
+
+l1 = [1,4,6,2,5,7,3]
+k = 3
+result = []
+for i in l1:
+    if i<k:
+        result.append(i+k)
+    elif i>k:
+        result.append(i-k)
+    else:
+        result.append(i)
+print(result)
+# for i in range(len(result)-1):
+#     if result[i]<result[i+1]:
+#         maxval = result[i+1]
+#     else:
+#         minval = result[i]
+print(max(result) - min(result))
+
+#----------------------------------------------
+
+# wap to display the maximum sub list based on the k th value
+
