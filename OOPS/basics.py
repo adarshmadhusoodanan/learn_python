@@ -46,7 +46,7 @@ print(dir(str))     # members of str class
 
 # like above we can check the members of any class for example list, tuple, dict, set etc
 
-#----------------------------------
+#----------------------------------------------------
 
 s = 'OOPS - Object Oriented Programming System'
 print(len(s))       #41
