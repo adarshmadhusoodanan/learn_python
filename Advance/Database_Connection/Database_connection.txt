@@ -1,0 +1,36 @@
+- The main aim of connecting external database to the python file is used to do 
+  serializing and /deserializing the data, to make it as persistent data or 
+  permenent data 
+- It is necessary to install external module while connecting two software like
+  python and mysql
+- pip install pymysql 
+  This module has some inbuilt classes , methods and functions to perform connection
+  between the python and mysql
+
+Steps to connect :
+1. Need to import external module 
+    import pymysql 
+2. Use connect method to pass credentials of external database for connection 
+   con_obj = pymysql.connect(par1,par2,par3) 
+   par1 -> user
+   par2 -> password
+   par3 -> host 
+3. Once the connection is established connect method returns the connection 
+    details , store it in a variable and it becomes the connection object. 
+4. Create cursor object with the help of connection objects and cursor method
+    cur_obj = con_obj.cursor()
+    This object helps us to go inside the external database and perform CRUD 
+    operations
+5. Use exceute method to run the sql quries
+    cur_obj.exceute(---sql query---)
+6. Use looping statements to display the data when we are performing the read operation 
+7. Need to save the changes when we are performing insertion, modification, and deletion
+    operations. Use commit method as follows.
+    con_obj.commit()
+8. Use row count method to display the actual count of rows as be updated
+    cur_obj.rowcount
+9.Close the connection between python file and a database using close method
+
+Note:exceutemany() internaly iterate through list of values during each iteration it 
+  will take each tuple value and store individual values into the placeholder and it 
+  pass the value to its respective column and save the data.
