@@ -1,0 +1,25 @@
+{
+    "person1": {
+        "name": "Keerthana",
+        "age": 21,
+        "address": "Chitradurga"
+    },
+    "person2": {
+        "name": "Adarsh",
+        "age": 22,
+        "degree": "B.E",
+        "stream": "CSE",
+        "skillset": [
+            "python",
+            "sql",
+            "powerbi",
+            "excel"
+        ]
+    },
+    "person3": {
+        "name": "Kishan",
+        "age": 24,
+        "degree": "B.E",
+        "stream": "CSE"
+    }
+}
