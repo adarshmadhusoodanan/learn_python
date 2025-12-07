@@ -47,6 +47,7 @@
 # add the res to a local variable
 # delete the last number from the given number
 
+
 # num = int(input(" enter a number : "))
 # temp = num
 # res =0
@@ -79,25 +80,25 @@
 
 # WAP TO CHECK the given number is strong or not
 
-def factorial(n):
-    fact =1
-    for i in range(1,n+1):
-        fact = fact*i
-        # print(f"{fact} x {i}")
-    return fact
+# def factorial(n):
+#     fact =1
+#     for i in range(1,n+1):
+#         fact = fact*i
+#         # print(f"{fact} x {i}")
+#     return fact
 
 
-num = int(input(" enter number "))
-temp = num
-res=0
-while num!=0:
-    rem = num%10
-    res += factorial(rem)
-    num = num//10
-if res == temp:
-    print("strong number")
-else:
-    print("not strong number")
+# num = int(input(" enter number "))
+# temp = num
+# res=0
+# while num!=0:
+#     rem = num%10
+#     res += factorial(rem)
+#     num = num//10
+# if res == temp:
+#     print("strong number")
+# else:
+#     print("not strong number")
 
 
 #---------------------------------------------------
@@ -441,4 +442,7 @@ else:
     
 
 
-#---------------------------------------------------
+#--------------------------------------------------
+
+
+
