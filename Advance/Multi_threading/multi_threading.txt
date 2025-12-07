@@ -1,0 +1,17 @@
+Multi-Threading / Multi-Tasking :
+- It is a module in python 
+- It is a process performing multiple task simultaneously at the same time.
+- With this we can have multiple inputs and multiple outputs at the same
+  time and efficiency of an application will be increased.
+- To perform multi threading need to place individual tasks in a Individual
+  threads
+  Syntax: import threading
+          t1=threading.thread(target=taskname)
+- To work on the treads need to use to place Individual tasks in a 
+  Individual threads 
+
+1. start() - it is used to start the exceution of the threads.
+2. join() - It is used to join the exceutionof multi-threads.
+3. isalive() - It returns true if the thread is in alive mode or else returns False .
+4. getName() - It is used to get the name of the Thread.
+5. setName() - Used to modify name of existing thread 
