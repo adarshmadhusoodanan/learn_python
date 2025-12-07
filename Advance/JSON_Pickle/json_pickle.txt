@@ -1,0 +1,43 @@
+JSON:
+- It stands for javascript object notation and it ia a individual module present in python 
+- It is a lightweight architecture used to connect between two different applications
+- In this we need to serialize and deserialize the data in the form of dictnory 
+
+4 Methods in JSON module
+1. Loads() :  It is used for deserializing the data present in same file 
+2. Load() : It is used for deserializing of a data present in different file or external file 
+3. Dumps() : It is used for serializing the data present in same file 
+2. Dump() : It is used for serializing of a data present in different file or external file 
+
+Note:
+1. Loads method will work on the data present in same file . it accepts the data only the string 
+   format and that need to be in the form of key and value pair and connects to dictnory.
+
+2. Dumps method is used to serialize the data present in same file it accepts any type of data 
+   and dumps in the form of strings.
+
+3. Load method is used to deserilaize the data present in external file it accepts file object and 
+   deserialize the data into its original format 
+   json.load(file_obj)
+
+4. Dump method is used to serialize the data to an external file. it accepts data in dump as the 
+   first parameter and loacton to dump as a second parameter
+   json.dump(par1,par2) 
+   par1 -> data to dump 
+   par2 -> loc to dump 
+
+---------------------------------------------------------------------------------------------------
+
+Pickle:
+- It is a module in python used to pickling and unpickling of data in bytes format.
+- pickling means accept the data and convert into bytes format 
+- unpickling means convert the bytes data into its original format.
+
+- For pickling we have dumps and dump method for data present in same and external file 
+  respectively
+- For unpickling we have loads and load method for data present in same and external file 
+  respectively
+
+- It accepts any type of data and pickle into bytes
+- When pickling and unpickling data present in external file we need to use write binary(wb)
+  mode of operation for dump method and read binary(rb) mode of operation for load method.77yn 

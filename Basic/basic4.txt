@@ -122,3 +122,19 @@ Pass:
             pass
         else:
             print('No pass')
+
+String Formatting:
+Without format:
+    a,b=10,20
+    print("a value is",a , "b value is",b)
+
+Using format:
+    print(" a value is {} and b value is {}".format(a,b))
+    op: a value is 10 and b value is 20
+
+    print(" a value is {a} and b value is {b}".format(a,b))
+    op: a value is 10 and b value is 20
+
+Using f string:
+    print(f"a value is {a} and b value is {b}")
+    op:a value is 10 and b value is 20
