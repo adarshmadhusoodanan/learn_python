@@ -1,0 +1,129 @@
+Operator : Symbol used to perform operation is called Operator.
+Operator : Values on which operation are performed is called operands.
+
+Types of Operator:
+Based on number of operands:
+    Uniary
+    Binary
+    Trinary
+Based on Operation:
+    Arithmetic:
+        +,-,*,/,%,//,**
+    Relational/Comparision:
+        ==,!=,<,>,<=,>=
+    Logical:
+        and , or , not 
+    Bitwise:
+        &,|,^,<<,>>,~
+    Assigned:
+        =
+        Short hand assignment:
+            +=,/=,%=,//=,**=,&=,|=,^=,<<=,>>=
+Based on Operator:
+    Membership:
+        in , not in
+    Identity:
+        is , is not
+    Slicing:
+        :
+    Dot:
+        .
+    Decoration:
+        @
+
+1. Arithmetic Operator:
++ :
+    int + int -> int
+    int + float -> float
+    int + complex -> complex
+    float +  complex -> complex
+    complex + + complex -> complex
+    int + string -> Typeerror
+    float + string -> Typeerror
+    complex + string -> Typeerror
+
+- :
+    int - int -> int
+    int - complex -> complex
+    int - complex -> complex
+    float - complex -> complex
+    complex - complex -> complex
+    float - string -> Typeerror
+    complex - string -> Typeerror
+    string - string -> Typeerror
+
+* :
+    int * int -> int 
+    int * float -> float
+    int * complex -> complex
+    float * complex -> complex
+    complex * complex -> complex
+    int * string -> string
+    float * string -> Typeerror
+    complex * string -> Typeerror
+    string * string -> Typeerror
+
+/ :
+    int / int -> int 
+    int / float -> float 
+    If any operand is complex return type complex
+    If any operand is string return type  error 
+
+// :
+    int // int -> int 
+    int // float -> float 
+    float // float -> float 
+    If any operand is complex or string return type is Type Error 
+
+**:
+    a**b -> a power b 
+
+2. Relational/Comparision : This operator are used to compare two values.
+    There are six operators
+    It return boolean values (True or False)
+    >,<,<=,>=  will not supports for complex data type
+    ==,!=  will work for all type of data 
+
+ASCII: It stands for American Standard Code for Information Interchange
+Range of ASCII 0-127
+    A-Z -> 65-90
+    a-z -> 97-122
+    0-9 -> 48-57
+    special character 
+
+ordinal() -> ord() -> in-built function.
+which takes char and returns ASCII values
+ord(char) -> ASCII 
+
+character() -> chr() -> in-built function.
+which takes ASCII value and returns the character.
+chr() -> chr
+
+3. Logical Operators : This operator are used to compare the conditions.
+    There are three logical operator and,or,not.
+    It returns boolean values True or False.
+
+        and
+    C1 |  C2  | Res         C1 |  C2  | Res           Cond | Res  
+   ----|------|-----       ----|------|-----         ------|-----
+    T  |  F   |  F          T  |  F   |  T              T  | F
+    T  |  T   |  T          T  |  T   |  T              F  | T
+    F  |  T   |  F          F  |  F   |  T
+    F  |  F   |  F          F  |  F   |  F
+
+Precedence of Operator:
+()
+**
++X,-X,~(bitwise)     X->operand 
+*,/,//,%             left to right
++,-
+<<,>>
+&  Bitwise and 
+^  Bitwise XOR
+|  Bitwise OR 
+comparision , membership , identity 
+not 
+and 
+or 
+
+Assignment operator : This is used to assign the values to the variable 
