@@ -36,7 +36,7 @@
 # d1={'A':"apple",'B':"bat",'C':"cat",'D':'dog','A':"ant"}
 # print(d1)                                           op: {'A': 'ant', 'B': 'bat', 'C': 'cat', 'D': 'dog'}
 
-            # dict are ordered coolection
+            # dict are ordered collection
 
 # d1={'A':"apple",'B':"bat",'C':"cat",'D':'dog'}      
 # print(d1)                                           op: {'A': 'apple', 'B': 'bat', 'C': 'cat', 'D': 'dog'}

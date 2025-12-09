@@ -1,7 +1,10 @@
-Operator : Symbol used to perform operation is called Operator.
-Operator : Values on which operation are performed is called operands.
+Operator : 
+    Symbol used to perform operation is called Operator.
+Operand : 
+    Values on which operation are performed is called operands.
 
 Types of Operator:
+
 Based on number of operands:
     Uniary
     Binary
@@ -37,7 +40,7 @@ Based on Operator:
     int + float -> float
     int + complex -> complex
     float +  complex -> complex
-    complex + + complex -> complex
+    complex + complex -> complex
     int + string -> Typeerror
     float + string -> Typeerror
     complex + string -> Typeerror

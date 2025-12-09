@@ -93,11 +93,14 @@
 # print(s1)                                  op: {1, 2, 3, 4, 5, 6}
 # print(s2)                                  op: {1, 2, 3, 4, 5, 6}
 
-            # set.add() -> None
+            # set.add(value) -> None
 
 # s1={1,3,5,6,4,2}
 # print(s1.add(10))                          op: None
 # print(s1)                                  op: {1, 2, 3, 4, 5, 6, 10}
+
+# s1={1,3,5,6,4,2}
+# print(s1.add(10,20))                TypeError: set.add() takes exactly one argument (2 given)
 
             # set.remove() -> None      - removes specified element. Raises KeyError if the element is not found.   
 
@@ -125,7 +128,7 @@
 # s1=set()
 # print(s1.pop())                            #op: KeyError: 'pop from an empty set'
 
-            # set.update() -> None          - updates the set with the union of itself and others.
+            # set.update(iterable) -> None          - updates the set with the union of itself and others.
 
 # s1={1,2,3,5,4,8}
 # print(s1.update([7,9]))                    op: None

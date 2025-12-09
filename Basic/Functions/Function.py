@@ -11,7 +11,7 @@
 #       - With parameters and with return type
 #       - Recursive functions:
 # 3. Miscellaneous functions: 
-# 4. Ananymous functions (lambda functions):
+# 4. Anonymous functions (lambda functions):
 
 def greet():
     print("Hello, welcome to the world of Python functions!")

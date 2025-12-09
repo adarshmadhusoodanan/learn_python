@@ -58,7 +58,10 @@ student_info("Adarsh M", 2, "ECE")
         #  Branch: ECE
         # *************************
 
-# orbitory variable arguments:during function defination an argument define with a * prefix, so while function call we can pass n number of arguments and it stores all the arguments in the form of tuple
+# orbitory variable arguments:
+
+# during function defination an argument define with a * prefix, 
+# so while function call we can pass n number of arguments and it stores all the arguments in the form of tuple
 
 def add(*numbers):                                  # parameters
     print("The sum is:", sum(numbers))              # we can access parameters directly using their name. 
@@ -79,7 +82,10 @@ orbi_fun("hello",1,2,3,4,5,a=10)                          # arguments
 # output
         # (1, 2, 3, 4, 5) 10 hello  
 
-# orbitory keyword variable arguments: during function defination an argument define with a ** prefix, so while function call we can pass n number of keyword arguments and it stores all the arguments in the form of dictionary
+# orbitory keyword variable arguments: 
+
+# during function defination an argument define with a ** prefix, 
+# so while function call we can pass n number of keyword arguments and it stores all the arguments in the form of dictionary
 
 def student_info(**info):                            # parameters
     print(info)                                      # we can access parameters directly using their name. 

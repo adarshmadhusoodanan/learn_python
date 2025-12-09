@@ -4,7 +4,7 @@ Variable:
     |__ variable
 
 Identifier: 
-    All the name used in the program are  called Identifier 
+    All the name used in the program are called Identifier 
         Ex: Class name, function name, variable name, object name 
     Variable is also identifier 
 
