@@ -1,0 +1,72 @@
+- It is a module in python need to use by importing with the name re.
+- It is used to search for the given pattern is present in the given location or not.
+Syntax: import re
+        res=re.search(par1,par2)
+    par1 - pattern to search 
+    par2 - where to search
+- Search method is used to look for the pattern which is accepting has a first parameter 
+  and searching given location in a second parameter.
+- The pattern can find anything either at the beginning at either at the last or at the 
+  middle
+- If the pattern is found it returns the match object or it returns none 
+
+span() : It is used to return the loaction details from where to where the given pattern
+is present in thr given loaction.
+    variablename.span()
+
+findall() : The method looks for the given pattern in the given location for multiple 
+times (including duplicates), collects everything and stores in the form of list.
+    Syntax: re.findall(pattern to find , location to find)
+
+Wildcard(.): dot(.) will be considereed as a wildcard character in pythons regular 
+expressions, which is used to look for any character like lower,upper,numeric and special 
+character exceptnew line character
+    Ex: res=re.search('supe.[A-Z]',data)
+
+Note:
+[] : It is used to find the individual character in the given range
+{} : It is used to find the specified character is present excatly for specified no of 
+    times or not
+    Syntax: character{int}
+    Ex: a{3}
+
++ : It is used to look for the given character is present for one or more occurance 
+    Syntax: ['character+']
+
+* : It is used to look for the given character is present or not for 0 or more occurance 
+    Syntax: ['character*]
+
+Meta character : These are the characters which has its own special meaning python
+regular expressions
+    Syntax: '\character+'
+
+[a-z]+ : It will look for only lowercase characters fore one or more occurances
+
+[A-Z]+ : It looks for only uppercase characters for one or more occurances 
+
+[0-9]+ : It looks for the combination of numeric characters except remaining characters
+
+['\d+'] : It look for the combination of numeric character except remaining characters
+
+['\D'] : It will look for the combination of all characters except numeric characters
+
+['\s+'] : It looks for all whitespaces , except character 
+
+['\S+'] : It looks for all characters except whitespaces 
+
+['\w+'] : It looks for all the character except special characters 
+
+['\W+'] : It will look for all the special character , except remaining characters 
+
+^ : It will be treated as a caret symbol in pythons re, which is used to ignores the 
+    characters which is assigned to it during runtime 
+
+\A : It will check for the characters present only at the beginning of a given loc or not 
+
+\Z : It will check for the specified characters is present only at the end of the given 
+     loaction or not 
+
+\b : It will look for the given pattern is present either at the beginning or at the end 
+     of each word in the given loaction 
+  \b characters : It will look for the given pattern is present at the beginning of each word 
+  characters \b : It will look for the given pattern is present at the end of each word 
