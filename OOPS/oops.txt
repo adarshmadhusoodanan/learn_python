@@ -1,0 +1,143 @@
+            object oriented programming in python
+why we need OOPS
+- basically Oops is required to create our own data types
+    All the states and behaviour of data type is defined inside there respective class
+    for example we have predefined class str to represent string data type
+    similarly we have predefined class int to represent integer data type
+    but if we want to represent student data type then we have to create our own class
+- By using OOPS we can achieve the real time senarious such as an operator showing multiple 
+  behaviour or function showing a multiple behavior based on the situtaion.
+
+class is blueprint / design / structure of real world object
+-----
+object is an instance of class
+------
+
+attributes are the members of class
+----------
+    -> 2 types
+        - variables or states (variables which are declared inside class)
+                + class variable
+                + instance variable
+        - methods or behaviors (function which are defined inside class)
+                + class method
+                + static method
+                + instance method
+                    = normal instance method
+                    = magic / dunder instance method
+
+--------------------------------------------------------------------------------------------
+
+variables
+
+1. class variable : 
+
+- universal variable for all objects of class
+- it is also called static variable
+- it will be created at the time of class loading
+- it is defined inside class but outside any method
+- it is shared by all objects of class
+- it can be accessed by using class name or by using self keyword inside instance method
+- it is used to store common property of all objects of class
+
+2. instance variable : 
+
+- unique variable for each object of class
+- it is defined inside constructor by using self keyword
+- it is created at the time of object creation
+- it can be accessed by using self keyword inside instance method
+- it is used to store unique property of each object of class
+
+
+3. local variable : 
+
+- variable which are defined inside method / function
+- it is created at the time of method / function call
+- it can be accessed only inside the method / function
+- it is destroyed automatically when method / function call is completed
+
+-----------------------------------------------------------------------------------------------
+methods
+
+1. class method : 
+
+- method which is defined by using @classmethod decorator and it takes cls as first parameter
+- it can access only class variable
+- it is used to access class variable and to create factory methods
+
+2. static method : 
+
+- method which is defined by using @staticmethod decorator and it doesn't
+  take self or cls as first parameter
+- it can't access class variable and instance variable
+- it is used to create utility methods
+
+3. instance method : 
+
+- method which is defined without any decorator and it takes self as first parameter
+- it can access class variable and instance variable
+- it is used to access instance variable and to perform operations on instance variable
+    -> 2 types
+    - normal instance method
+      - method which is defined by using self as first parameter
+
+    - magic / dunder instance method
+        - method which is defined by using double underscore before and after the method name
+
+class Student:
+    school_name = "ABC School"   # class variable
+
+    def __init__(self, name, marks):
+        self.name = name          # instance variable
+        self.marks = marks
+
+    # Instance Method
+    def display(self):
+        return f"Name: {self.name}, Marks: {self.marks}, School: {Student.school_name}"
+
+    # Class Method
+    @classmethod
+    def change_school(cls, new_name):
+        cls.school_name = new_name
+
+    # Static Method
+    @staticmethod
+    def is_passed(marks):
+        return marks >= 35
+
+# Using all methods
+s1 = Student("Keerthana", 90)
+
+print(s1.display())               # instance method
+Student.change_school("XYZ School")   # class method
+print(Student.is_passed(90))      # static method
+print(s1.display())
+
+# op: 
+# Name: Keerthana, Marks: 90, School: ABC School
+# True
+# Name: Keerthana, Marks: 90, School: XYZ School
+
+--------------------------------------------------------------------------------------
+
+constructor
+
+- constructor is a special type of method which is used to initialize 
+  the object of class
+- constructor is defined by using __init__() method
+- constructor is called automatically when we create an object of class
+- constructor is used to allocate memory for the object
+- constructor is used to initialize the instance variables of class
+
+---------------------------------------------------------------------------------------
+
+self
+
+- self is a special keyword which is used to represent the current object of class
+- self is used to access the instance variables and instance methods of class
+- self is used to differentiate between instance variable and local variable
+- self is used to call the instance methods of class
+- self is not a keyword, it is just a convention, we can use any name instead
+  of self but it is recommended to use self
+
+-------------------------------------------------------------------------------------------
