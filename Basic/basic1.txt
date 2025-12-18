@@ -1,9 +1,15 @@
-Software: Group of program written and arranged in an order to achieve multiple task 
+Software: 
+        Group of program written and arranged in an order 
+        to achieve multiple task 
+
 There are two types of Software:
-    System Software 
-    Application Software
-Operating Software: It is an interface between user and the machine 
-    Ex: Android,IOS,Window,Ubantu,MacOS,Linux
+    1. System Software 
+    2. Application Software
+
+Operating Software: 
+        It is an interface between user and the machine 
+            Ex: Android,IOS,Window,Ubantu,MacOS,Linux
+
     Architecture:
            user
             |
@@ -14,28 +20,41 @@ Operating Software: It is an interface between user and the machine
          kernel
             |
         hardware
+
     Kernel is core of Operating System 
+======================================================================
 
-Python: Python is a high level, object oriented, dynamically typed, interpreted 
-scripting laungage as well as programming laungage 
+Python: 
+        Python is a high level, object oriented, dynamically typed, 
+        interpreted scripting laungage as well as programming laungage 
 
-Laungage: It is a medium of communication
+Laungage: 
+        It is a medium of communication
 
 Classification of Laungage:
+
 1. Based on Human Readability and machine Readability
-    High Level : Easy for humans to read and write  
-    Low Level : Machine level not easy to read and write
+    High Level : 
+            Easy for humans to read and write  
+    Low Level : 
+            Machine level not easy to read and write
 
 2. Based on Classes and objects
-    Structure Oriented : They dont need object and classes
-    Object Oriented : Supports both classes and objects 
+    Structure Oriented : 
+            They dont need object and classes
+    Object Oriented : 
+            Supports both classes and objects 
 
 3. Based on type decision 
-    Statically typed : Type of the variable is declared at compile time 
-    Dynamically typed : Type of the variable is decided during run time 
+    Statically typed : 
+            Type of the variable is declared at compile time 
+    Dynamically typed : 
+            Type of the variable is decided during run time 
 
 4. Based on Exceution 
-    Programming laungage : In programming laungage entire file will be complied 
-                           If there is any error no lines will be exceuted 
-    Scripting laungage : In scripting laungage line by line interprtation takes place 
-                         interprtation takes place until interpreter reaches a line with error  
+    Programming laungage : 
+                In programming laungage entire file will be complied 
+                If there is any error no lines will be exceuted 
+    Scripting laungage : 
+                In scripting laungage line by line interprtation takes place 
+                interprtation takes place until interpreter reaches a line with error  

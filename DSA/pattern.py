@@ -370,4 +370,178 @@ def pattern21(n):
 
 #--------------------------
 
+# n = int(input("enter n: "))
+# val = ord("A")+n-1 #65+ 4-1 = 69
+# for i in range(n):
+#     for j in range(n):
+#         print(chr(val), end=" ")  # first iteration value= 69
+#     val-=1  #next iteration value will reduce
+#     print()
+
+# enter n: 4
+# D D D D 
+# C C C C
+# B B B B
+# A A A A
+#--------------------------
+
+
+# n = int(input("n: "))
+
+# for i in range(n):
+#     for j in range(n):
+#         if i>=j:
+#             print("*", end=" ")
+#         else:
+#             print(" ",end=" ")
+#     print()
+
+# n: 5
+# *
+# * *
+# * * *
+# * * * *
+
+
+# mirror
+
+# n = int(input("n: "))
+
+# for i in range(n):
+#     for j in range(n):
+#         if (i+j)>=n-1:
+#             print("*", end=" ")
+#         else:
+#             print(" ",end=" ")
+#     print()
+
+# n: 5
+#         * 
+#       * *
+#     * * *
+#   * * * *
+# * * * * *
+#--------------------------
+
+# n = int(input("n: "))
+
+# for i in range(n):
+#     for j in range(n):
+#         if i<=j:
+#             print("*", end=" ")
+#         else:
+#             print(" ",end=" ")
+#     print()
+
+# n: 5
+# * * * * * 
+#   * * * *
+#     * * *
+#       * *
+#         *
+
+# mirror
+
+# n = int(input("n: "))
+
+# for i in range(n):
+#     for j in range(n):
+#         if (i+j)<=n-1:
+#             print("*", end=" ")
+#         else:
+#             print(" ",end=" ")
+#     print()
+
+# n: 5
+# * * * * * 
+# * * * *
+# * * *
+# * *
+# *
+#----------------------------------------
+
+
+# n = int(input("n: "))
+
+# for i in range(n):
+#     for j in range(n):
+#         print(i+j, end=" ")
+#     print()
+
+# n: 5
+# 0 1 2 3 4 
+# 1 2 3 4 5
+# 2 3 4 5 6
+# 3 4 5 6 7
+# 4 5 6 7 8
+
+#----------------------------------------
+
+
+# n = int(input("n:  "))
+
+# val=1
+# for i in range(n):
+#     for j in range(n):
+#         if i>=j:
+#             print(val,end=" ")
+#         else:
+#             print(" ", end=" ")
+#     val+=1
+#     print()
+
+# n:  4
+# 1       
+# 2 2
+# 3 3 3
+# 4 4 4 4
+
+
+# n = int(input("n:  "))
+
+# val=1
+# for i in range(n):
+#     for j in range(n):
+#         if i>=j:
+#             print(val,end=" ")
+#             val+=1
+#         else:
+#             print(" ", end=" ")  
+#         if val>9:
+#             val=1
+#     print()
+
+# n:  5
+# 1
+# 2 3
+# 4 5 6
+# 7 8 9 1
+# 2 3 4 5 6
+
+#------------------------------------
+
+# n = int(input("n:  "))
+
+
+# for i in range(n):
+#     val=1
+#     for j in range(n):
+        
+#         if i>=j:
+#             print(val,end=" ")
+#             val+=1
+#         else:
+#             print(" ", end=" ")  
+#         if val>9:
+#             val=1
+#     print()
+
+# n:  6
+# 1
+# 1 2
+# 1 2 3
+# 1 2 3 4
+# 1 2 3 4 5
+
+#----------------------------------
 

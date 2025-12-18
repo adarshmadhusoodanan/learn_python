@@ -57,6 +57,19 @@
 # - it can access only class variable
 # - it is used to access class variable and to create factory methods
 
+#example:
+class Example:
+    class_variable = "I am a class variable"
+
+    @classmethod    # decorator to define class method
+    def class_method(cls):
+        return cls.class_variable
+    
+print(Example.class_method())   # Output: I am a class variable
+
+# in real time scenario class method is used to create factory methods( methods which return object of class)
+
+#-------------------------------------------------
 
 # 2. static method : 
 
@@ -64,6 +77,16 @@
 # - it can't access class variable and instance variable
 # - it is used to create utility methods
 
+class Math:
+    @staticmethod    # decorator to define static method
+    def add(a, b):
+        return a + b
+    
+print(Math.add(5, 10))   # Output: 15
+
+# in real time scenario static method is used to create utility methods like math module, random module etc
+
+#-----------------------------------------------------------------
 
 # 3. instance method : 
 
