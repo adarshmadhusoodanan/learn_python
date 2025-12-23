@@ -14,7 +14,7 @@
 
 # WAP to find factorial of given number 
 
-#algo
+# algo
 
 # take the input
 # iterate using for loop
@@ -217,6 +217,14 @@
 
 # program to check automorphic number or not
 
+# n = int(input(" enter number"))
+# square = n * n
+# l = len(str(n))
+# last_digits = square % (10 ** l)
+# if last_digits == n:
+#     print("automorphic number")
+# else:
+#     print("not automorphic number")
 
 
 

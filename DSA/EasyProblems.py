@@ -171,3 +171,48 @@
 # print(s.repeatedSubstringPattern("abab"))
 
 #----------------------------------------------------------------------------------------------------------
+
+# You are given a 0-indexed array of integers nums of length n.
+# You are initially positioned at nums[0]. Each element nums[i] represents the maximum length of a forward jump from index i.
+# Return the minimum number of jumps to reach nums[n - 1].
+
+from typing import List
+
+
+class Solution:
+    def jump(self, nums: List[int]) -> int:
+        n = len(nums)
+        jumps = 0
+        current_end = 0
+        farthest = 0
+        for i in range(n - 1):
+            farthest = max(farthest, i + nums[i])
+            if i == current_end:
+                jumps += 1
+                current_end = farthest
+        return jumps
+s = Solution()
+print(s.jump([2,3,1,1,4]))    #2
+print(s.jump([2,3,0,1,4]))    #2
+
+
+# method 2:
+# # l=[1,3,5,8,9,2,6,7,6,8,9]
+# l=[0,10,20]
+# n = 0
+# c = 0
+
+# while n < len(l):
+#     if l[n] > 0:                    
+#         val = n
+#         n = n + l[n]
+#         c += 1
+#         if n > len(l):              
+#             if l[val] == l[-1]:      
+#                 print(c)
+#                 break
+#             else:
+#                 print(-1)
+#     else:
+#         print(-1)
+#         n=len(l)

@@ -11,7 +11,7 @@ Multi-Threading / Multi-Tasking :
   Individual threads 
 
 1. start() - it is used to start the exceution of the threads.
-2. join() - It is used to join the exceutionof multi-threads.
+2. join() - It is used to join the exceution of multi-threads.
 3. isalive() - It returns true if the thread is in alive mode or else returns False .
 4. getName() - It is used to get the name of the Thread.
 5. setName() - Used to modify name of existing thread 
